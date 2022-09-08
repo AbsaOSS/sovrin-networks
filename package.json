@@ -1,0 +1,11 @@
+{
+  "name": "sovrin-networks",
+  "version": "0.1.0",
+  "author": "ABSA",
+  "description": "Registry of Indy Sovrin networks",
+  "main": "./index.js",
+  "files": [
+    "/genesis",
+    "index.js"
+  ]
+}
