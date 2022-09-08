@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+const fs = require('fs')
 
 'use strict'
 
@@ -34,6 +35,14 @@ function getGenesisFile (networkName) {
   return networks[networkName]
 }
 
+function getGenesisFileContents (networkName) {
+  if (!networks[networkName]) {
+    throw Error(`Couldn't resolve genesis file for network ${networkName}. Available networks: ${JSON.stringify(networks, null, 2)}`)
+  }
+  return fs.readFileSync(networks[networkName]).toString()
+}
+
 module.exports = {
-  getGenesisFile
+  getGenesisFile,
+  getGenesisFileContents
 }

@@ -1,6 +1,6 @@
 {
   "name": "sovrin-networks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "ABSA",
   "description": "Registry of Indy Sovrin networks",
   "main": "./index.js",
