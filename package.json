@@ -4,6 +4,9 @@
   "author": "ABSA",
   "description": "Registry of Indy Sovrin networks",
   "main": "./index.js",
+  "scripts": {
+    "verify-genesis": "node script/verify-originals.js"
+  },
   "files": [
     "/genesis",
     "index.js"
