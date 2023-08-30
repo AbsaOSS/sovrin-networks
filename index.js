@@ -20,6 +20,7 @@ const fs = require('fs')
 const networks = {
   'host-docker-internal': `${__dirname}/genesis/host_docker_internal`,
   'absadocker': `${__dirname}/genesis/absadocker`,
+  'didx': `${__dirname}/genesis/didx`,
   '127.0.0.1': `${__dirname}/genesis/127.0.0.1`,
   'indyscanpool': `${__dirname}/genesis/indyscanpool`,
   'builder-net': `${__dirname}/genesis/pool_transactions_builder_genesis`,
