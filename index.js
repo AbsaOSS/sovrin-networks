@@ -18,15 +18,13 @@ const fs = require('fs')
 'use strict'
 
 const networks = {
-  'host-docker-internal': `${__dirname}/genesis/host_docker_internal`,
-  'absadocker': `${__dirname}/genesis/absadocker`,
-  'didx': `${__dirname}/genesis/didx`,
-  '127.0.0.1': `${__dirname}/genesis/127.0.0.1`,
-  'indyscanpool': `${__dirname}/genesis/indyscanpool`,
-  'builder-net': `${__dirname}/genesis/pool_transactions_builder_genesis`,
-  'staging-net': `${__dirname}/genesis/pool_transactions_sandbox_genesis`,
-  'main-net': `${__dirname}/genesis/pool_transactions_live_genesis`,
-  'training-net': `${__dirname}/genesis/pool_transactions_training_genesis`,
+  'host-docker-internal': `${__dirname}/genesis/host_docker_internal.ndjson`,
+  'absadocker': `${__dirname}/genesis/absadocker.ndjson`,
+  '127.0.0.1': `${__dirname}/genesis/127.0.0.1.ndjson`,
+  'freenet-didx': `${__dirname}/genesis/didx.ndjson`,
+  'indyscanpool': `${__dirname}/genesis/indyscanpool.ndjson`,
+  'sovrin-testnet': `${__dirname}/genesis/sovrin_testnet.ndjson`,
+  'sovrin-mainnet': `${__dirname}/genesis/sovrin_mainnet.ndjson`,
 }
 
 function getGenesisFile (networkName) {

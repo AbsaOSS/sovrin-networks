@@ -24,9 +24,8 @@ const sorvinDir = `${__dirname}/../sovrin-originals`
 const updatesTxsDir = `${__dirname}/../genesis`
 
 const compareFiles = [
-  'pool_transactions_builder_genesis',
-  'pool_transactions_live_genesis',
-  'pool_transactions_sandbox_genesis'
+  'sovrin_mainnet.ndjson',
+  'sovrin_testnet.ndjson'
 ]
 
 function parseTxsFile (path) {

@@ -5,7 +5,12 @@
   "description": "Registry of Indy Sovrin networks",
   "main": "./index.js",
   "scripts": {
-    "verify-genesis": "node script/verify-originals.js"
+    "verify-genesis": "node script/verify-originals.js",
+    "test": "jest ./test"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.2",
+    "jest": "^26.0.1"
   },
   "files": [
     "/genesis",
